@@ -9,6 +9,7 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] float _spawnTime;
 
     private float _spawnTimer;
+    public int spawnTimeDecreaser;
 
     private void Start()
     {
@@ -24,6 +25,16 @@ public class ObstacleSpawner : MonoBehaviour
 
         SpawnObstacle();
         ResetTimer();
+
+        CheckToDecrese();
+    }
+
+    private void CheckToDecrese() {
+        spawnTimeDecreaser++;
+        if (Timer.instance.CurrentTime % 10 == 0 && Timer.instance.CurrentTime % 10 > spawnTimeDecreaser) {
+            spawnTimeDecreaser++;
+            Debug.Log("Decrese Spawn Time");
+        }
     }
 
     private void Countdown() => _spawnTimer -= Time.deltaTime; 
