@@ -34,7 +34,6 @@ public class ObstacleSpawner : MonoBehaviour
         if (Mathf.Floor(Timer.instance.CurrentTime / 5) != spawnTimeDecreaser && spawnTimeDecreaser < 14) {
             spawnTimeDecreaser = Mathf.Floor(Timer.instance.CurrentTime / 5);
             _spawnTime -= 0.2f;
-            Debug.Log("Decrese Spawn Time");
         }
     }
 

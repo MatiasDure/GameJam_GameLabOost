@@ -59,14 +59,12 @@ public class ObstaclePooler : MonoBehaviour
     private Hero.Abilities ChooseRandomWeakness()
     {
         int ranNum = Random.Range(0, _prefabs.Length);
-        Debug.Log(ranNum);
         return _prefabs[ranNum].Weakness;
     }
 
     public Obstacle EnableObstacle()
     {
         Hero.Abilities ranAbility = ChooseRandomWeakness();
-        Debug.Log(ranAbility);
 
         return EnableObstacle(ranAbility);
     }

@@ -59,13 +59,9 @@ public class Hero : MonoBehaviour
 
         if (obstacle.Weakness != _ability)
         {
-            Debug.Log("You took a hit");
             OnObstacleHit?.Invoke();
         }
-        else
-        {
-            Debug.Log("You destroyed the obstacle");
-        }
+
 
         ObstaclePooler.Instance.DisableObstacle(obstacle);
         CameraShake.Instance.TriggerShake();

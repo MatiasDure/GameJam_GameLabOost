@@ -30,12 +30,11 @@ public class PlayerHealth : MonoBehaviour {
 
     private void DecreaseHP() {
         HP -= 1;
-        Debug.Log(HP);
         if (HP < 1) {
             Death();
         }
         if(HP == 1) {
-            heart2.color = new Color(heart2.color.r, heart2.color.g, heart2.color.b, 0.5f); ;
+            heart2.color = new Color(heart2.color.r, heart2.color.g, heart2.color.b, 0.5f);
         }
     }
 
