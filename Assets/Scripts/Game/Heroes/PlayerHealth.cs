@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,7 @@ public class PlayerHealth : MonoBehaviour {
     public int HP { get; private set; }
     [SerializeField] private Image heart1;
     [SerializeField] private Image heart2;
+    public static event Action OnPlayerDeath;
     private void Awake() {
         if (Instance == null) Instance = this;
         else Destroy(this.gameObject);
@@ -28,15 +30,17 @@ public class PlayerHealth : MonoBehaviour {
 
     private void DecreaseHP() {
         HP -= 1;
-        if (HP <= 1) {
+        Debug.Log(HP);
+        if (HP < 1) {
             Death();
         }
         if(HP == 1) {
-
+            heart2.color = new Color(heart2.color.r, heart2.color.g, heart2.color.b, 0.5f); ;
         }
     }
 
     private void Death() {
+        OnPlayerDeath?.Invoke();
         SceneManager.Instance.SwitchScene("GameOver");
     }
 

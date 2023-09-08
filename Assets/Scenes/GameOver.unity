@@ -134,8 +134,9 @@ GameObject:
   - component: {fileID: 4383983}
   - component: {fileID: 4383985}
   - component: {fileID: 4383984}
+  - component: {fileID: 4383986}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -258,6 +259,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4383982}
   m_CullTransparentMesh: 1
+--- !u!114 &4383986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4383982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c0b1011788a9e41b659ca35a603665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 4383984}
 --- !u!1 &448937175
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,7 +996,7 @@ GameObject:
   - component: {fileID: 1735273767}
   - component: {fileID: 1735273766}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Game Over
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1577,6 +1591,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978215030}
   m_CullTransparentMesh: 1
+--- !u!1001 &2017499357
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3027995714795604800, guid: 747491e792be72541b57bba2a2ad1c5d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027995714795604800, guid: 747491e792be72541b57bba2a2ad1c5d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 503.9139
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027995714795604800, guid: 747491e792be72541b57bba2a2ad1c5d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 333.71115
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027995714795604800, guid: 747491e792be72541b57bba2a2ad1c5d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027995714795604800, guid: 747491e792be72541b57bba2a2ad1c5d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027995714795604800, guid: 747491e792be72541b57bba2a2ad1c5d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027995714795604800, guid: 747491e792be72541b57bba2a2ad1c5d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027995714795604800, guid: 747491e792be72541b57bba2a2ad1c5d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027995714795604800, guid: 747491e792be72541b57bba2a2ad1c5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027995714795604800, guid: 747491e792be72541b57bba2a2ad1c5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027995714795604800, guid: 747491e792be72541b57bba2a2ad1c5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027995714795604802, guid: 747491e792be72541b57bba2a2ad1c5d,
+        type: 3}
+      propertyPath: m_Name
+      value: TimerManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 747491e792be72541b57bba2a2ad1c5d, type: 3}
 --- !u!1 &2032289308
 GameObject:
   m_ObjectHideFlags: 0
