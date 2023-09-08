@@ -32,6 +32,7 @@ public class Timer : MonoBehaviour
 
     private void ResetUI() {
         time = 0;
+        if(TimerText == null) { return; }
         TimerText.text = "time: " + 0;
     }
 }
